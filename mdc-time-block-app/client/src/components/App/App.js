@@ -8,6 +8,7 @@ import Home from '../../pages/Home/Home';
 import Login from '../../pages/Login/Login';
 import Register from '../../pages/Register/Register';
 import NotFound from '../../pages/NotFound/NotFound';
+import Navbar from '../Navbar/Navbar';
 
 import './App.css';
 
@@ -50,6 +51,7 @@ class App extends Component {
       <AuthContext.Provider value={this.state.auth}>
         <div className='App'>
           <div className='container-fluid'>
+            <Navbar />
             <Routes>
               <Route exact path='/' element={<Home/>} />
               <Route path='/login' element={<Login/>} />
