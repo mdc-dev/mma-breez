@@ -3,13 +3,18 @@
     width: 100vw;
     display: inline-flex;
     padding: 5px;
+    padding-top: 20px;
+
+    .hamburger {
+        display: none;
+    }
 
     .left {
         display: inline-flex;
 
         h1 {
             margin: 0;
-            margin-left: 35px;
+            margin-left: 150px;
             text-decoration: none !important;
             color: inherit;
         } 
@@ -30,7 +35,7 @@
 
     .right {
         position: absolute;
-        right: 0;
+        right: 150px;
         
         .nav-items {
             display: flex;
@@ -54,5 +59,32 @@
             
         }
     }
+
+    @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    display: inline-flex;
+    width: 100vw;
+    font-size: 1.5em;
+    padding-bottom: 15px;
+
+    .page-nav, .right {
+        display: none !important;
+    }
+
+    .left h1 {
+        font-size: 1em;
+        margin-left: 30px;
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 50px
+    }
+
+}
     
 }
+

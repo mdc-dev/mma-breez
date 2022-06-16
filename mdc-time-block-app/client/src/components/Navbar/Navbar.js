@@ -20,6 +20,7 @@ const Navbar = () => {
                 <li id="get-started" className="item"><Link style={{textDecoration: 'none', color: 'inherit'}} to='/register'>Get Started</Link></li>
             </ul>}
         </div>
+        <div className="hamburger"><i class="fa-solid fa-bars"></i></div>
     </div>
   )
 }
