@@ -10,6 +10,8 @@
         h1 {
             margin: 0;
             margin-left: 35px;
+            text-decoration: none !important;
+            color: inherit;
         } 
 
         .page-nav {
@@ -20,7 +22,7 @@
             margin-top: 10px;
 
             li {
-                margin-right: 25px;
+                margin-right: 35px;
                 font-size: 1.2em;
             }
         }
@@ -42,6 +44,8 @@
                 font-size: 1.2em; 
                 padding: 5px;
                 border-radius: 5px;
+                text-decoration: none;
+                color: inherit;
             }
 
             #get-started {

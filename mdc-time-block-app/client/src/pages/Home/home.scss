@@ -20,6 +20,7 @@
                 margin: 0;
             }
 
+
             .get-started-btn {
                 border: none;
                 font-size: 2em;
@@ -35,16 +36,59 @@
         width: 100vw;
         
         .message {
-            width: 50%;
+            width: 45%;
             position: absolute;
+            height: 100vh;
             left: 0;
-            padding-top: 25vh;
+            padding-top: 10vh;
             padding-left: 60px;
 
             h1, h2{
-                font-size: 4em;
+                font-size: 3.5em;
                 margin: 0;
             }
+            
+            p {
+                width: 90%
+            }
+        }
+
+        .steps {
+            width: 45%;
+            position: absolute;
+            right: 0;
+            padding-top: 10vh;
+            text-align: center;
+            padding-right: 50px;
+
+            h1 {
+                font-size: 3.5em;
+                margin: 0;
+            }
+
+            .step-list {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    border-radius: 4px;
+                    width: 80%;
+                    margin: 10px auto;
+                    padding: 5px;
+                    z-index: 1000;
+                    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+                    
+                    h2 {
+                        font-size: 1em;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-size: .75em;
+                    }
+                }
+            }
+
         }
     }
 
@@ -75,6 +119,33 @@
             p {
                 font-size: .8em;
             }
+        }
+    }
+
+    .about {
+        padding-top: 50px;
+        height: 70vh;
+        width: 100vw;
+        text-align: center;
+        position: relative;
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            width: 50%;
+            padding: 10px;
+            padding-left: 50px;
+        }
+
+        .image {
+            border: 1px solid black;
+            width: 30%;
+            height: 40%;
+            position: absolute;
+            right: 70px;
+            top: 150px;
         }
     }
 }
