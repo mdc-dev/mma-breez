@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './RegistrationForm.scss'
 
 class RegistrationForm extends Component {
   state = {
@@ -35,7 +36,7 @@ class RegistrationForm extends Component {
             <form onSubmit={this.handleSubmit}>
               <div className='input-group mb-3'>
                 <div className="input-group-prepend">
-                  <span className="input-group-text">mail</span>
+                  <span className="input-group-text">Email</span>
                 </div>
                 <input
                   className='form-control'
@@ -114,7 +115,7 @@ class RegistrationForm extends Component {
 
 
 
-              <button className='btn btn-primary' type='submit'>Register Now!</button>
+              <button className='register-button' type='submit'>Register Now!</button>
             </form>
           </div>
         {/* </div> */}

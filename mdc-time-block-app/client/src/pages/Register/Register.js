@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
+import './Register.scss'
 import API from '../../lib/API';
 
 class Register extends Component {
@@ -37,7 +38,8 @@ class Register extends Component {
     }
 
     return (
-      <div className='Register'>
+      <div className='register'>
+        <div className="registration-container">
         <div className='row'>
           <div className='col'>
             <h1>Register</h1>
@@ -55,6 +57,7 @@ class Register extends Component {
           <div className='col'>
             <RegistrationForm onSubmit={this.handleSubmit} />
           </div>
+        </div>
         </div>
       </div>
     );
