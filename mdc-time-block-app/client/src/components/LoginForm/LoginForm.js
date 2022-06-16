@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './LoginForm.scss'
 class LoginForm extends Component {
   state = {
     email: '',
@@ -58,7 +59,7 @@ class LoginForm extends Component {
                 />
               </div>
 
-              <button className='btn btn-primary' type='submit'>Login</button>
+              <button className='register-button' type='submit'>Login</button>
             </form>
           </div>
         {/* </div> */}

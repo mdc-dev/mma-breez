@@ -4,6 +4,7 @@ import { Link, Navigate } from 'react-router-dom';
 import API from '../../lib/API';
 import AuthContext from '../../contexts/AuthContext';
 import LoginForm from '../../components/LoginForm/LoginForm';
+import './Login.scss'
 
 class Login extends Component {
   static contextType = AuthContext;
@@ -47,7 +48,7 @@ class Login extends Component {
     }
 
     return (
-      <div className='Login'>
+      <div className='login'>
         <div className='row'>
           <div className='col'>
             <h1>Login</h1>
